@@ -1,8 +1,10 @@
+mixin navLink(link, name)
+  li
+    a(href=link).nav-link=name
+
 header
   ul.nav 
-    li
-      a(href="#").nav-link item 1
-    li
-      a(href="#").nav-link item 2
-    li
-      a(href="#").nav-link item 3
+    +navLink("#", "item 1")
+    +navLink("#", "item 2")
+    +navLink("#", "item 3")
+    +navLink("#", "item 4")
