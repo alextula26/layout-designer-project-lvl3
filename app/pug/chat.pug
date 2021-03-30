@@ -1,0 +1,15 @@
+extends layout/main.pug
+
+block variables
+  - var pageTitle = "Мессенджер «Hexlet Chat» | Чаты"
+  - var youAreUsingPug = false
+
+block main
+  #container.col
+    if youAreUsingPug
+      p You are amazing
+    else
+      p Get on it!
+    p.
+      Pug is a terse and simple templating language with a
+      strong focus on performance and powerful features.
