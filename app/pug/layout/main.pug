@@ -1,11 +1,13 @@
 block variables
 
 doctype html
-html(lang="en")
-  head
-    title= pageTitle
-  body
-    include ../modules/header
-    main
-      block main
-    include ../modules/footer
+html(lang="en").h-100
+  include ../modules/head
+  body.h-100
+    div.container.h-100
+      div.row.no-gutters.h-100
+        div.col-sm-4
+          include ../modules/header
+          block left-side 
+        div.col-sm-8
+          block right-side
