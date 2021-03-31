@@ -7,6 +7,7 @@ $gray-100: #fbfbfb;
 $gray-200: #efefef;
 $gray-600: #6c757d;
 $gray-800: #343a40;
+$body-bg: #e5e5e5;
 
 $primary: $blue;
 $secondary: $gray-600;
@@ -28,4 +29,21 @@ $theme-colors: (
   "light": $light,
   "dark": $dark,
   "grey": $grey,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1540px,
 );
