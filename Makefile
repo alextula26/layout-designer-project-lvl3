@@ -5,10 +5,10 @@ lint:
 	npx stylelint ./app/scss/*.scss
 
 pug-index:
-	pug ./app/pug/index.pug --pretty -o ./app/
+	pug ./app/pug/pages/index.pug --pretty -o ./dist/
 
 pug-chat:
-	pug ./app/pug/chat.pug --pretty -o ./app/
+	pug ./app/pug/pages/chat.pug --pretty -o ./dist/
 
 pug:
 	make pug-index
