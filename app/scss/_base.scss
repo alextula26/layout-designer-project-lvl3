@@ -1,9 +1,5 @@
-body,
-html {
-  height: 100vh;
-}
-
 body {
+  color: $dark;
   background-color: $body-bg;
 }
 
@@ -21,4 +17,8 @@ section {
 
 .right-side {
   border-left: 1px solid $grey;
+}
+
+.hide-scrollbar {
+  @include hide-scrollbar();
 }

@@ -1,16 +1,16 @@
 block variables
 
 doctype html
-html(lang="en")
+html(lang="en").h-100
   include ../modules/head
-  body
+  body.h-100
     main.container-xxl.h-100
       section.h-100
         div.row.no-gutters.h-100
-          div.col-sm-4.left-side
+          div.col-sm-4.left-side.h-100.overflow-auto.d-flex.flex-column
             include ../modules/header
-            div.content.px-4.pt-5
+            div.px-4.pt-5.hide-scrollbar
               block left-side 
           div.col-sm-8.right-side
-            div.content
+            div
               block right-side
