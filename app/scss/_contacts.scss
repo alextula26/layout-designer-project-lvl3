@@ -1,5 +1,5 @@
 .contact {
-  $cn: &;
+  $contact: &;
   margin-top: 1rem;
   padding: 0 17px;
 
@@ -35,7 +35,7 @@
     text-decoration: none;
     background-color: $primary;
 
-    #{$cn} {
+    #{$contact} {
       &-name {
         color: $light;
       }
