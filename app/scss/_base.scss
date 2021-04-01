@@ -7,12 +7,12 @@ body {
   background-color: $body-bg;
 }
 
-section.main {
+main {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
-main {
+section {
   margin-right: calc(1.5rem - 15px);
   margin-left: calc(1.5rem - 15px);
   background-color: $white;
