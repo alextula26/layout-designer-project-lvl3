@@ -1,3 +1,6 @@
+include ../mixins/contact
+include ../mixins/search
+
 -
   var contacts = {
     "A": [{
@@ -34,17 +37,12 @@
       status: "Был онлайн вчера",
       avatar: "./images/avatar_6.jpg"
     }],
-  }
+  }   
 
-mixin contact(name, status, avatar)
-  a(href="#").contact.d-flex.align-items-center
-    img(src= avatar).contact-avatar
-    span.contact-info.d-block
-      span.contact-name.d-block= name
-      small.contact-status.d-block= status
+h2.mb-4.font-weight-bold Контакты
 
++search("Поиск по контактам")
 
-h2.mb-5.font-weight-bold Контакты
 each val, key in contacts
   div.text-muted.mb-5
     span.contact-alphabet= key
