@@ -4,10 +4,13 @@ doctype html
 html(lang="en")
   include ../modules/head
   body
-    div.container-xxl.h-100
-      div.row.no-gutters.h-100
-        div.col-sm-4
-          include ../modules/header
-          block left-side 
-        div.col-sm-8
-          block right-side
+    section.container-xxl.h-100.main
+      main.h-100
+        div.row.no-gutters.h-100
+          div.col-sm-4.left-side
+            include ../modules/header
+            div.content
+              block left-side 
+          div.col-sm-8.right-side
+            div.content
+              block right-side
