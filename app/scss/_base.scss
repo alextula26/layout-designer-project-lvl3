@@ -20,5 +20,6 @@ section {
 }
 
 .hide-scrollbar {
+
   @include hide-scrollbar();
 }

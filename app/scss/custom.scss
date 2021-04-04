@@ -1,5 +1,9 @@
 @import '_variables';
-@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
 @import '_mixins';
+
 @import '_base';
+
 @import '_contacts';

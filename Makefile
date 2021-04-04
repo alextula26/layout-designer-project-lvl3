@@ -2,7 +2,7 @@ install:
 	npm install
 
 lint:
-	npx stylelint ./app/scss/*.scss
+	npx stylelint ./app/scss/**/*.scss
 	pug-lint ./app/pug/**/*.pug
 
 pug-index:
@@ -14,3 +14,7 @@ pug-chat:
 pug:
 	make pug-index
 	make pug-chat
+
+sass:
+	sass ./app/scss/custom.scss ./dist/css/style.css
+	npx stylelint --fix ./dist/css/style.css	
