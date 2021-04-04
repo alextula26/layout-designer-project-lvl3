@@ -1,0 +1,10 @@
+{
+  "disallowSpaceAfterCodeOperator": true,
+  "disallowBlockExpansion": true,
+  "disallowClassAttributeWithStaticValue": true,
+  "disallowClassLiteralsBeforeAttributes": true,
+  "disallowIdLiteralsBeforeAttributes": true,
+  "disallowIdAttributeWithStaticValue": true,
+  "disallowHtmlText": true,
+  "disallowMultipleLineBreaks": true
+}

@@ -1,19 +1,19 @@
 extends ../layout/main
 
 block variables
-  - var pageTitle = "Мессенджер «Hexlet Chat» | Чаты"
-  - var youAreUsingPug = false
+  -var pageTitle = "Мессенджер «Hexlet Chat» | Чаты"
+  -var youAreUsingPug = false
 
 block left-side
   if youAreUsingPug
     p You are amazing
   else
     p Get on it!
-  p(class="text-info").
+  p.text-info.
     Pug is a terse and simple templating language with a
     strong focus on performance and powerful features.
 
 block right-side
-  p(class="text-info").
+  p.text-info.
     Pug is a terse and simple templating language with a
     strong focus on performance and powerful features.
