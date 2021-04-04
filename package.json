@@ -2,10 +2,7 @@
   "name": "hexlet-chat",
   "version": "1.0.0",
   "description": "Мессенджер «Hexlet Chat»",
-  "main": "js/index.js",
-  "engines": {
-    "node": ">=13"
-  },  
+  "main": "./dist/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "stylelint": "stylelint ./app/scss/*.scss",
@@ -22,14 +19,13 @@
   },
   "homepage": "https://github.com/alextula26/layout-designer-project-lvl3#readme",
   "devDependencies": {
-    "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
     "bootstrap": "^4.6.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-plumber": "^1.2.1",
     "gulp-pug": "^4.0.1",
     "gulp-pug-linter": "^1.5.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-shorthand": "^1.1.0",
     "gulp-stylelint": "^13.0.0",
