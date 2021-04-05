@@ -5,6 +5,11 @@ block variables
   -var youAreUsingPug = true
 
 block left-side
+  div#myTabContent.tab-content
+    div(role="tabpanel" aria-labelledby="contacts-tab")#contacts.tab-pane.fade.show.active Контакты
+    div(role="tabpanel" aria-labelledby="chats-tab")#chats.tab-pane.fade Сообщения
+    div(role="tabpanel" aria-labelledby="profile-tab")#profile.tab-pane.fade Профиль
+  
   include ../modules/contacts
 
 block right-side

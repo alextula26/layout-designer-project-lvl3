@@ -3,6 +3,14 @@ body {
   background-color: $body-bg;
 }
 
+header {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  background-color: $primary;
+  border-top-left-radius: 1rem;
+}
+
 main {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -22,4 +30,8 @@ section {
 .hide-scrollbar {
 
   @include hide-scrollbar();
+}
+
+.filter-invert-100 {
+  filter: invert(100%);
 }

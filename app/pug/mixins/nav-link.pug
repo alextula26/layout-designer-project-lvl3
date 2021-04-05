@@ -1,0 +1,3 @@
+mixin nav-link(id, href, name, selected)
+  li(role="presentation").nav-item
+    a(id=id href="#"+href data-toggle="tab" role="tab" aria-controls=href aria-selected=selected)(class!=attributes.class).nav-link=name

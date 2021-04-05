@@ -17,4 +17,8 @@ pug:
 
 sass:
 	sass ./app/scss/custom.scss ./dist/css/style.css
-	npx stylelint --fix ./dist/css/style.css	
+	npx stylelint --fix ./dist/css/style.css
+
+build:
+	make pug
+	make sass
