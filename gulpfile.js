@@ -1,8 +1,12 @@
 const gulp = require('gulp');
-const pug2html = require('./gulp/pug');
+const clean = require('./gulp/clean');
+const pug2html = require('./gulp/pug2html');
 const styles = require('./gulp/styles');
 const images = require('./gulp/images');
+const serve = require('./gulp/serve');
 
-const { series } = gulp;
+const { series, parallel } = gulp;
 
-exports.default = series(pug2html, styles, images);
+const dev = parallel(pug2html, styles, images);
+
+exports.default = series(clean, dev, serve);
