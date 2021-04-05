@@ -1,8 +1,8 @@
 include ../mixins/nav-link
 
-header.d-flex.flex-row.justify-content-between.align-items-center
+header.d-flex.flex-row.justify-content-between.align-items-center.pl-4.py-3.pr-2
   img(src="./images/icons/logo.svg" width="15" height="25").filter-invert-100
-  ul(role="tablist")#top-menu-tab.nav.mr-4
-    +nav-link("contacts-tab", "contacts", "Контакты", true)(class="active text-white")
+  ul(role="tablist")#top-menu-tab.nav
+    +nav-link("contacts-tab", "contacts", "Контакты", true)(class="active")
     +nav-link("chats-tab", "chats", "Сообщения", false)
     +nav-link("profile-tab", "profile", "Профиль", false)

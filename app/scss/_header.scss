@@ -1,0 +1,58 @@
+header {
+  background-color: $primary;
+  border-top-left-radius: 1rem;
+
+  @include media-breakpoint-down(md) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    border-radius: 0;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: 0.8rem;
+
+    @include media-breakpoint-down(md) {
+      font-size: 0;
+    }
+
+    &::before {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      margin-right: 0.5rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      filter: invert(100%);
+      content: "";
+
+      @include media-breakpoint-down(md) {
+        margin-right: 0;
+      }
+    }
+
+    &.icon-contacts {
+      &::before {
+        background-image: url("../images/icons/people.svg");
+      }
+    }
+
+    &.icon-chats {
+      &::before {
+        background-image: url("../images/icons/chat.svg");
+      }
+    }
+
+    &.icon-profile {
+      &::before {
+        background-image: url("../images/icons/person.svg");
+      }
+    }
+  }
+}
