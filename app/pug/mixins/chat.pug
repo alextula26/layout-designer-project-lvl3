@@ -1,0 +1,6 @@
+mixin chat(name, description, avatar, time)
+  a(href="#").chat.d-flex.align-items-center
+    img(src=avatar).chat-avatar
+    span.chat-info.d-block
+      span.chat-name.d-block=name
+      small.chat-status.d-block=description
