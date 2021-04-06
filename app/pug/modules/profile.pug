@@ -1,1 +1,48 @@
+include ../mixins/search
+
+-
+  var contacts = [
+    {
+      title: "Страна",
+      description: "Москва, Россия",
+      icon: "./images/icons/globe.svg"
+    },
+    {
+      title: "Телефон",
+      description: "+7 (499) 123-45-67",
+      icon: "./images/icons/telephone.svg"  
+    },
+    {
+      title: "Email",
+      description: "nikita.m@hexlet.io",
+      icon: "./images/icons/envelope.svg"
+    },
+    {
+      title: "Twitter",
+      description: "@n__mikhaylov",
+      icon: "./images/icons/people.svg"
+    }    
+  ] 
+
 h2.mb-4.font-weight-bold Профиль
+
++search("Поиск по сообщениям")
+
+div.profile
+  div.card.text-center.border-0.py-3.mb-3.mt-2
+    img(src="./images/avatar_1.jpg" alt="").card-avatar.rounded-circle.mb-3.mx-auto.width-90.height-90
+    div.card-body
+      h6.card-title.font-weight-bold.mb-3 Кодовёнок Хекслетович
+      p.card-text.text-secondary Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
+
+
+  ul.list-group.py-3
+    each contact in contacts
+      li.list-group-item.d-flex.justify-content-between.align-items-center.border-top-0.border-left-0.border-right-0
+        span
+          small.text-secondary=contact.title
+          br
+          small=contact.description
+        span.opacity-50
+          img(src=contact.icon alt=contact.title)
+

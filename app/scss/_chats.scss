@@ -1,46 +1,49 @@
-.chat {
-  $chat: &;
-  margin-top: 1rem;
-  padding: 0 17px;
+$chat: ".chat";
 
-  @include box-shadow($box-shadow);
+.chats {
+  .chat {
+    margin-top: 1rem;
+    padding: 0 17px;
 
-  &-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
+    @include box-shadow($box-shadow);
 
-  &-name {
-    color: $dark;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
+    &-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
 
-  &-time {
-    color: $secondary;
-    font-size: 0.8rem;
-  }
+    &-name {
+      color: $dark;
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
 
-  &-description {
-    overflow: hidden;
-    color: $secondary;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
+    &-time {
+      color: $secondary;
+      font-size: 0.8rem;
+    }
 
-  @include hover-focus() {
-    text-decoration: none;
-    background-color: $primary;
+    &-description {
+      overflow: hidden;
+      color: $secondary;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
 
-    #{$chat} {
-      &-name {
-        color: $light;
-      }
+    @include hover-focus() {
+      text-decoration: none;
+      background-color: $primary;
 
-      &-description {
-        color: $grey;
+      #{$chat} {
+        &-name {
+          color: $light;
+        }
+
+        &-description {
+          color: $grey;
+        }
       }
     }
   }

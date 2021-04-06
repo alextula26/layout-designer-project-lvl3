@@ -27,6 +27,7 @@ h2.mb-4.font-weight-bold Чаты
 
 +search("Поиск по сообщениям")
 
-each chat in chats
-  div.text-muted.mb-3
-    +chat(chat.name, chat.description, chat.avatar, chat.time)
+div.chats
+  each chat in chats
+    div.text-muted.mb-3
+      +chat(chat.name, chat.description, chat.avatar, chat.time)
