@@ -2,7 +2,9 @@
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
-@import '_mixins';
+@import './mixins/index';
+
+@import './utilities/index';
 
 @import '_base';
 
