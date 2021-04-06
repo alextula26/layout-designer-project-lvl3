@@ -2,18 +2,15 @@ extends ../layout/main
 
 block variables
   -var pageTitle = "Мессенджер «Hexlet Chat» | Главная"
-  -var youAreUsingPug = true
 
 block left-side
-  div#navTabContent.tab-content
-    div(role="tabpanel" aria-labelledby="contacts-tab")#contacts.tab-pane.fade.show.active
+  div.tab-content
+    div(aria-labelledby="contacts-tab")#contacts.tab-pane.fade.show.active
       include ../modules/contacts
-    div(role="tabpanel" aria-labelledby="chats-tab")#chats.tab-pane.fade
+    div(aria-labelledby="chats-tab")#chats.tab-pane.fade
       include ../modules/chats
-    div(role="tabpanel" aria-labelledby="profile-tab")#profile.tab-pane.fade Профиль  
+    div(aria-labelledby="profile-tab")#profile.tab-pane.fade
+      include ../modules/profile
 
 block right-side
-  div.d-flex.justify-content-center.align-items-center.flex-column.h-100
-    img(src="./images/avatar_1.jpg" alt="").rounded-circle.mb-3
-    span.font-weight-bold Привет, Кодовёнок
-    small.text-secondary Выбери чат, чтобы начать общаться
+  include ../modules/greeting
