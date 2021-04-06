@@ -2,34 +2,12 @@ $chat: ".chat";
 
 .chats {
   .chat {
-    margin-top: 1rem;
-    padding: 0 17px;
 
     @include box-shadow($box-shadow);
 
-    &-avatar {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-
     &-name {
-      color: $dark;
-      font-weight: 700;
       font-size: 1rem;
       line-height: 1.5rem;
-    }
-
-    &-time {
-      color: $secondary;
-      font-size: 0.8rem;
-    }
-
-    &-description {
-      overflow: hidden;
-      color: $secondary;
-      white-space: nowrap;
-      text-overflow: ellipsis;
     }
 
     @include hover-focus() {
@@ -38,11 +16,11 @@ $chat: ".chat";
 
       #{$chat} {
         &-name {
-          color: $light;
+          color: $light !important;
         }
 
         &-description {
-          color: $grey;
+          color: $grey !important;
         }
       }
     }

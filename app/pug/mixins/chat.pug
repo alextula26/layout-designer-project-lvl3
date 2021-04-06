@@ -1,8 +1,8 @@
 mixin chat(name, description, avatar, time)
-  a(href="#").chat.d-flex.align-items-center
-    img(src=avatar alt=name).chat-avatar
+  a(href="#").chat.d-flex.align-items-center.mt-3.px-3
+    img(src=avatar alt=name).width-50.height-50.rounded-circle
     span.flex-grow-1.p-4.overflow-hidden
       span.d-flex.justify-content-between
-        span.chat-name=name
-        span.chat-time=time
-      small.chat-description.d-block=description
+        span.text-dark.font-weight-bold.chat-name=name
+        small.text-secondary=time
+      small.text-truncate.text-secondary.d-block.chat-description=description
