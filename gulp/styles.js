@@ -1,15 +1,13 @@
 const gulp = require('gulp');
 const plumber = require('gulp-plumber');
-const scss = require('gulp-sass');
-const shorthand = require('gulp-shorthand');
+const sass = require('gulp-sass');
 const gulpStylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
 
 module.exports = function styles() {
   return gulp.src('./app/scss/custom.scss')
     .pipe(plumber())
-    .pipe(scss())
-    .pipe(shorthand())
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(gulpStylelint({
       fix: true,
       failAfterError: false,
