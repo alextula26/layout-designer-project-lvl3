@@ -3,15 +3,7 @@ $chat: ".chat";
 .chats {
   .chat {
 
-    @include box-shadow($box-shadow);
-
-    &-name {
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
-
     @include hover-focus() {
-      text-decoration: none;
       background-color: $primary;
 
       #{$chat} {

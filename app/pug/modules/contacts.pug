@@ -46,6 +46,6 @@ h2.mb-4.font-weight-bold Контакты
 div.contacts
   each val, key in contacts
     div.text-muted.mb-5
-      span.contact-alphabet=key
+      span.text-secondary.font-size-3=key
       each data in val
         +contact(data.name, data.status, data.avatar)

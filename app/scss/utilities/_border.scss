@@ -7,13 +7,13 @@
 
       @if ($side == "all") {
         .border#{$infix} {
-          border: 1px solid $grey;
+          border: 1px solid $grey !important;
         }
       }
 
       @else {
         .border#{$infix}-#{$side} {
-          border-#{$side}: 1px solid $grey;
+          border-#{$side}: 1px solid $grey !important;
         }
       }
     }

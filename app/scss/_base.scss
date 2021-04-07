@@ -26,15 +26,6 @@ section {
   }
 }
 
-.right-side {
-  border-left: 1px solid $grey;
-}
-
-.hide-scrollbar {
-
-  @include hide-scrollbar();
-}
-
 .filter-invert-100 {
   filter: invert(100%);
 }

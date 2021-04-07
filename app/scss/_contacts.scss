@@ -2,39 +2,17 @@ $contact: ".contact";
 
 .contacts {
   .contact {
-    margin-top: 1rem;
-    padding: 0 17px;
-
-    @include box-shadow($box-shadow);
-
-    &-alphabet {
-      color: $secondary;
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
-
-    &-name {
-      color: $dark;
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 1.5rem;
-    }
-
-    &-status {
-      color: $secondary;
-    }
 
     @include hover-focus() {
-      text-decoration: none;
       background-color: $primary;
 
       #{$contact} {
         &-name {
-          color: $light;
+          color: $light !important;
         }
 
         &-status {
-          color: $grey;
+          color: $grey !important;
         }
       }
     }
