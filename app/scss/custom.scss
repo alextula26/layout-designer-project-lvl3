@@ -6,10 +6,6 @@
 
 @import './utilities/index';
 
-@import '_base';
+@import '_sprite';
 
-@import '_header';
-
-@import '_contacts';
-
-@import '_chats';
+@import './modules/index';

@@ -5,7 +5,7 @@ const gulpStylelint = require('gulp-stylelint');
 const rename = require('gulp-rename');
 
 module.exports = function styles() {
-  return gulp.src('./app/scss/custom.scss')
+  return gulp.src('app/scss/custom.scss')
     .pipe(plumber())
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(gulpStylelint({
@@ -17,5 +17,5 @@ module.exports = function styles() {
     .pipe(rename({
       basename: "style"
     }))
-    .pipe(gulp.dest('./dist/css/'))
+    .pipe(gulp.dest('dist/css/'))
 }

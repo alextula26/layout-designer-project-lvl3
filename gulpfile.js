@@ -11,4 +11,12 @@ const { series, parallel } = gulp;
 
 const dev = parallel(pug2html, styles, scripts, images, spriteSVG);
 
-exports.default = series(dev);
+exports.pug2html = pug2html;
+exports.styles = styles;
+exports.scripts = scripts;
+exports.images = images;
+exports.spriteSVG = spriteSVG;
+exports.clean = clean;
+exports.serve = serve;
+
+exports.default = series(clean, dev);

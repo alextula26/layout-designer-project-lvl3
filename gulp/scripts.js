@@ -11,5 +11,5 @@ module.exports = function script() {
   ])
   .pipe(plumber())
   .pipe(concat('scripts.js'))
-  .pipe(gulp.dest('./dist/js/'));
+  .pipe(gulp.dest('dist/js/'));
 }
