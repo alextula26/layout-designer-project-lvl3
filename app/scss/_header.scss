@@ -39,19 +39,19 @@ header {
 
     &.icon-contacts {
       &::before {
-        background-image: url("../images/icons/people.svg");
+        background-image: url("../images/icons/symbol/chat.svg");
       }
     }
 
     &.icon-chats {
       &::before {
-        background-image: url("../images/icons/chat.svg");
+        background-image: url("../images/icons/symbol/sprite.svg#chat");
       }
     }
 
     &.icon-profile {
       &::before {
-        background-image: url("../images/icons/person.svg");
+        background-image: url("../images/icons/symbol/sprite.svg");
       }
     }
   }
