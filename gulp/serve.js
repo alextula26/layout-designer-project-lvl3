@@ -2,6 +2,7 @@ const gulp = require('gulp');
 
 const styles = require('./styles');
 const pug2html = require('./pug2html');
+const scripts = require('./scripts');
 
 const server  = require('browser-sync').create();
 
@@ -15,6 +16,7 @@ module.exports = function serve(cb) {
 
   gulp.watch('app/scss/**/*.scss', gulp.series(styles, cb => gulp.src('dist/css/*.css').pipe(server.stream()).on('end', cb)));
   gulp.watch('app/pug/**/*.pug', gulp.series(pug2html, cb => gulp.src('dist/*.html').pipe(server.stream()).on('end', cb)));
+  gulp.watch('app/js/**/*.js', gulp.series(scripts)).on('change', server.reload);
 
   return cb();
 }

@@ -14,6 +14,7 @@ $ sudo apt install make
 ```sh
 $ npm install -g sass
 $ npm install pug-cli -g
+$ npm install --global gulp-cli
 ```
 
 ## Setup
