@@ -1,0 +1,48 @@
+include ../mixins/dialog
+
+-
+  var dialogs = [
+    {
+      name: "Вениамин Редакторович",
+      text: "Да, я уже вышел и минут через 20-30 буду у тебя. Поеду на трамвае и потом в магазин. Тебе что-то захватить?",
+      avatar: "./images/content/avatar_4.jpg",
+      session: "8 минут назад",
+      type: "interlocutor"
+    },
+    {
+      name: "Я",
+      text: "Захвати мне колы и пару печенек. Как-то очень сладкого хочется, а в магазин идти лень",
+      avatar: "./images/content/avatar_1.jpg",
+      session: "5 минут назад",
+      type: "user"
+    },
+    {
+      name: "Я",
+      text: "А, слушай, купи мне ещё Macbook Pro. А то хочется работать в Хекслете, а там это условие",
+      avatar: "./images/content/avatar_1.jpg",
+      session: "3 минут назад",
+      type: "user"      
+    },
+    {
+      name: "Вениамин Редакторович",
+      text: "о_О",
+      avatar: "./images/content/avatar_4.jpg",
+      session: "Только что",
+      type: "interlocutor"
+    },    
+  ] 
+
+div.d-flex.align-items-center.px-3.py-4.border-bottom
+  img(src="./images/content/avatar_4.jpg" alt="").rounded-circle.mr-4.square-50
+  div.d-flex.flex-column
+    h6.font-weight-bold.mb-0 Вениамин Редакторович
+    small.text-secondary Онлайн
+
+div.p-5
+  each dialog in dialogs  
+    +dialog(dialog)
+       
+div.px-5.pt-5.mt-5.position-sticky.fixed-bottom
+  form.border-top.bg-white
+    input(type="text" placeholder="Напишите сообщение...").form-control-plaintext.px-4.py-3.bg-white       
+

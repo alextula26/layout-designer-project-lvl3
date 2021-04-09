@@ -15,6 +15,7 @@ module.exports = function serve(cb) {
     open: true,
     cors: true
   });
+  
   gulp.watch(['app/images/**/*.{gif,png,jpg,svg,webp}', '!app/images/icons/**/*'], gulp.series(images)).on('change', server.reload);
   gulp.watch('app/images/icons/svg/*.svg', gulp.series(spriteSVG)).on('change', server.reload);
   gulp.watch('app/scss/**/*.scss', gulp.series(styles, cb => gulp.src('dist/css/*.css').pipe(server.stream()).on('end', cb)));
