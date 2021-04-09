@@ -1,3 +1,5 @@
-mixin nav-link(id, name, title, selected)
+mixin nav-link(id, link, title, iconId, selected)
   li(role="presentation").nav-item
-    a(id=id class="icon-"+name href="#"+name data-toggle="tab" role="tab" aria-controls=name aria-selected=selected)(class!=attributes.class).nav-link=title
+    a(id=id href="#"+link data-toggle="tab" role="tab" aria-controls=link aria-selected=selected)(class!=attributes.class).nav-link
+      +icon(iconId, "nav-link-icon")
+      =title

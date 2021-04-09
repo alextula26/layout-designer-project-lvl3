@@ -21,8 +21,7 @@ header {
       font-size: 0;
     }
 
-    &::before {
-      position: relative;
+    &-icon {
       width: 25px;
       height: 25px;
       margin-right: 0.5rem;
@@ -30,28 +29,9 @@ header {
       background-position: center center;
       background-size: cover;
       filter: invert(100%);
-      content: "";
 
       @include media-breakpoint-down(md) {
         margin-right: 0;
-      }
-    }
-
-    &.icon-contacts {
-      &::before {
-        background-image: url("../images/icons/symbol/chat.svg");
-      }
-    }
-
-    &.icon-chats {
-      &::before {
-        background-image: url("../images/icons/symbol/sprite.svg#chat");
-      }
-    }
-
-    &.icon-profile {
-      &::before {
-        background-image: url("../images/icons/symbol/sprite.svg");
       }
     }
   }

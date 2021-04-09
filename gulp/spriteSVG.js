@@ -5,7 +5,7 @@ const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 
 module.exports = function spriteSVG() {
-  return gulp.src('app/images/icons/**/*.svg')
+  return gulp.src('app/images/icons/svg/*.svg')
     .pipe(svgmin({
       js2svg: {
         pretty: true
@@ -17,22 +17,21 @@ module.exports = function spriteSVG() {
         $('[stroke]').removeAttr('stroke');
         $('[style]').removeAttr('style');
       },
-      parserOptions: {xmlMode: true}
+      parserOptions: { xmlMode: true }
     }))
     .pipe(replace('&gt;', '>'))
     .pipe(svgSprite({
-      mode: {   
+      mode: {
         symbol: {
-          sprite: "sprite.svg",
+          sprite: "../sprite.svg",
           render: {
             scss: {
-              dest: '../../../scss/_sprite.scss',
-              template: 'app/scss/templates/_sprite_template.scss'
+              dest: '../../../../app/scss/_sprite.scss',
             }
           },
           example: true
         }
       }
     }))
-    .pipe(gulp.dest('app/images/sprite/'));
+    .pipe(gulp.dest('dist/images/sprite'));
 };

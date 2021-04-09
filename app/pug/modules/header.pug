@@ -1,11 +1,10 @@
 include ../mixins/nav-link
 
 header.d-flex.flex-row.justify-content-between.align-items-center.pl-4.py-3.pr-2
-  svg.icon.icon-people
-    use(xlink:href="./images/sprite/symbol/sprite.svg#people")
+  svg(width="15" height="25").icon.icon-people.filter-invert-100
+    use(xlink:href="./images/sprite/sprite.svg#logo")
 
-  img(src="./images/icons/logo.svg" width="15" height="25").filter-invert-100
   ul(role="tablist")#top-menu-tab.nav
-    +nav-link("contacts-tab", "contacts", "Контакты", true)(class="active")
-    +nav-link("chats-tab", "chats", "Сообщения", false)
-    +nav-link("profile-tab", "profile", "Профиль", false)
+    +nav-link("contacts-tab", "contacts", "Контакты", "people", true)(class="active")
+    +nav-link("chats-tab", "chats", "Сообщения", "chat", false)
+    +nav-link("profile-tab", "profile", "Профиль", "person", false)
