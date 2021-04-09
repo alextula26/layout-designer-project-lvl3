@@ -4,13 +4,13 @@ block variables
   -var pageTitle = "Мессенджер «Hexlet Chat» | Чаты"
 
 block left-side
-  if youAreUsingPug
-    p You are amazing
-  else
-    p Get on it!
-  p.text-info.
-    Pug is a terse and simple templating language with a
-    strong focus on performance and powerful features.
+  div.tab-content
+    div(aria-labelledby="contacts-tab")#contacts.tab-pane.fade
+      include ../modules/contacts
+    div(aria-labelledby="chats-tab")#chats.tab-pane.fade.show.active
+      include ../modules/chats
+    div(aria-labelledby="profile-tab")#profile.tab-pane.fade
+      include ../modules/profile
 
 block right-side
   p.text-info.
