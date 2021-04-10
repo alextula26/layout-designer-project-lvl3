@@ -1,4 +1,5 @@
 include ../mixins/dialog
+include ../mixins/send
 
 -
   var dialogs = [
@@ -43,7 +44,4 @@ div.p-5
     +dialog(dialog)
        
 div.px-5.pt-5.mt-5.position-sticky.fixed-bottom
-  form.border-top.bg-white.d-flex.justify-content-beetwen.align-items-center.py-1
-    input(type="text" placeholder="Напишите сообщение...").form-control-plaintext.flex-grow-1.px-4.py-3.bg-white
-    button(type="button").btn.btn-primary.square-50.rounded-circle
-      +icon("cursor")(class="filter-invert-100 square-20")
+  +send("Напишите сообщение...")
