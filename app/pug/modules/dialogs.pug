@@ -32,16 +32,15 @@ include ../mixins/send
       type: "interlocutor"
     },    
   ] 
-
-div.d-flex.align-items-center.px-3.py-4.border-bottom.position-sticky.fixed-top.bg-white
+div.d-flex.align-items-center.px-3.py-4.border-bottom.position-lg-sticky.position-fixed.fixed-top.bg-white
   img(src="./images/content/avatar_4.jpg" alt="").rounded-circle.mr-4.square-50
   div.d-flex.flex-column
     h6.font-weight-bold.mb-0 Вениамин Редакторович
     small.text-secondary Онлайн
 
-div.p-5
+div.p-5.mt-5.mt-lg-0
   each dialog in dialogs  
     +dialog(dialog)
        
-div.px-5.pt-5.mt-5.position-sticky.fixed-bottom
+div.px-lg-5.pt-lg-5.mt-lg-5.pb-4.pb-lg-0.mb-5.mb-lg-0.position-fixed.position-lg-sticky.fixed-bottom
   +send("Напишите сообщение...")
