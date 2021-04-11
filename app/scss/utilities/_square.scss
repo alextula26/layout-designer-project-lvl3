@@ -8,6 +8,14 @@
         width: $val;
         height: $val;
       }
+
+      .width#{$infix}-#{$key} {
+        width: $val;
+      }
+
+      .height#{$infix}-#{$key} {
+        height: $val;
+      }
     }
   }
 }
