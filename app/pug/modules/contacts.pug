@@ -39,11 +39,11 @@ include ../mixins/search
     }],
   }   
 
-h2.font-weight-bold Контакты
+h2.mb-4.font-weight-bold Контакты
 
 +search("Поиск по контактам")
 
-div.contacts.mt-5
+div.contacts
   each val, key in contacts
     div.text-muted.mb-5
       span.text-secondary.font-size-3=key
