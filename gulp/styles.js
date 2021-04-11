@@ -17,5 +17,5 @@ module.exports = function styles() {
     .pipe(rename({
       basename: "style"
     }))
-    .pipe(gulp.dest('dist/css/'))
+    .pipe(gulp.dest('build/css/'))
 }

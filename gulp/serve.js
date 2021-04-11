@@ -10,7 +10,7 @@ const server  = require('browser-sync').create();
 
 module.exports = function serve(cb) {
   server.init({
-    server: 'dist',
+    server: 'build',
     notify: false,
     open: true,
     cors: true
@@ -18,8 +18,8 @@ module.exports = function serve(cb) {
   
   gulp.watch(['app/images/**/*.{gif,png,jpg,svg,webp}', '!app/images/icons/**/*'], gulp.series(images)).on('change', server.reload);
   gulp.watch('app/images/icons/svg/*.svg', gulp.series(spriteSVG)).on('change', server.reload);
-  gulp.watch('app/scss/**/*.scss', gulp.series(styles, cb => gulp.src('dist/css/*.css').pipe(server.stream()).on('end', cb)));
-  gulp.watch('app/pug/**/*.pug', gulp.series(pug2html, cb => gulp.src('dist/*.html').pipe(server.stream()).on('end', cb)));
+  gulp.watch('app/scss/**/*.scss', gulp.series(styles, cb => gulp.src('build/css/*.css').pipe(server.stream()).on('end', cb)));
+  gulp.watch('app/pug/**/*.pug', gulp.series(pug2html, cb => gulp.src('build/*.html').pipe(server.stream()).on('end', cb)));
   gulp.watch('app/js/**/*.js', gulp.series(scripts)).on('change', server.reload); 
 
   return cb();

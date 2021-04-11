@@ -4,9 +4,7 @@
   "description": "Мессенджер «Hexlet Chat»",
   "main": "./dist/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "stylelint": "stylelint ./app/scss/*.scss",
-    "pug-lint": "pug-lint ./app/pug/**/*.pug"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

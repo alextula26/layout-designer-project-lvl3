@@ -10,5 +10,5 @@ module.exports = function pug2html() {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('dist/'))
+    .pipe(gulp.dest('build/'))
 };

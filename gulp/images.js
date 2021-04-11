@@ -7,5 +7,5 @@ module.exports = function images() {
     '!app/images/icons/**/*'
   ])
     .pipe(plumber())
-    .pipe(gulp.dest('dist/images/'))
+    .pipe(gulp.dest('build/images/'))
 };
