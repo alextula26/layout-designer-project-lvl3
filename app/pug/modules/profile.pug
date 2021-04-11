@@ -5,22 +5,22 @@ include ../mixins/search
     {
       title: "Страна",
       description: "Москва, Россия",
-      icon: "./images/icons/globe.svg"
+      iconId: "globe"
     },
     {
       title: "Телефон",
       description: "+7 (499) 123-45-67",
-      icon: "./images/icons/telephone.svg"  
+      iconId: "telephone"  
     },
     {
       title: "Email",
       description: "nikita.m@hexlet.io",
-      icon: "./images/icons/envelope.svg"
+      iconId: "envelope"
     },
     {
       title: "Twitter",
       description: "@n__mikhaylov",
-      icon: "./images/icons/people.svg"
+      iconId: "people"
     }    
   ] 
 
@@ -35,7 +35,6 @@ div.profile
       h6.card-title.font-weight-bold.mb-3 Кодовёнок Хекслетович
       p.card-text.text-secondary Милый и скромный помощник начинающих разработчиков. Люблю JavaScript
 
-
   ul.list-group.py-3
     each contact in contacts
       li.list-group-item.d-flex.justify-content-between.align-items-center.border-top-0.border-left-0.border-right-0
@@ -43,6 +42,4 @@ div.profile
           small.text-secondary=contact.title
           br
           small=contact.description
-        span.opacity-50
-          img(src=contact.icon alt=contact.title)
-
+        +icon(contact.iconId)(class="square-16 opacity-50 d-none d-lg-block")

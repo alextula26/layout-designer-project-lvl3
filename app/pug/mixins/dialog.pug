@@ -1,5 +1,5 @@
 mixin dialog(dialog)    
-  if dialog.type == "interlocutor"
+  if dialog.type === "interlocutor"
     div.row.justify-content-start
       div.col-12.col-lg-9.mb-3
         div.d-flex
@@ -17,6 +17,4 @@ mixin dialog(dialog)
           div(style="box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);").p-4.bg-primary.radius.flex-grow-1
             div.text-light.mb-2=dialog.text
             hr.border-bottom.mb-1
-            small.text-grey=dialog.session
-
-  
+            small.text-grey=dialog.session  

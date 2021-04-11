@@ -4,6 +4,7 @@ install:
 lint:
 	npx stylelint ./app/scss/**/*.scss
 	pug-lint ./app/pug/**/*.pug
+	npx htmlhint ./dist/*.html
 
 pug-index:
 	pug ./app/pug/pages/index.pug --pretty -o ./dist/
@@ -22,3 +23,6 @@ sass:
 build:
 	make pug
 	make sass
+
+deploy:
+	npx surge ./dist/

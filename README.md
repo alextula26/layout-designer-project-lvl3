@@ -40,3 +40,9 @@ $ make build
 ```sh
 $ gulp
 ```
+
+## Link to surge
+
+```sh
+$ forgetful-zephyr.surge.sh
+```
