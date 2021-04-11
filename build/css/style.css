@@ -14272,6 +14272,19 @@ a.text-grey:focus {
   height: 90px;
 }
 
+.square-92 {
+  width: 92px;
+  height: 92px;
+}
+
+.width-92 {
+  width: 92px;
+}
+
+.height-92 {
+  height: 92px;
+}
+
 .square-200 {
   width: 200px;
   height: 200px;
@@ -14349,6 +14362,19 @@ a.text-grey:focus {
 
   .height-sm-90 {
     height: 90px;
+  }
+
+  .square-sm-92 {
+    width: 92px;
+    height: 92px;
+  }
+
+  .width-sm-92 {
+    width: 92px;
+  }
+
+  .height-sm-92 {
+    height: 92px;
   }
 
   .square-sm-200 {
@@ -14431,6 +14457,19 @@ a.text-grey:focus {
     height: 90px;
   }
 
+  .square-md-92 {
+    width: 92px;
+    height: 92px;
+  }
+
+  .width-md-92 {
+    width: 92px;
+  }
+
+  .height-md-92 {
+    height: 92px;
+  }
+
   .square-md-200 {
     width: 200px;
     height: 200px;
@@ -14509,6 +14548,19 @@ a.text-grey:focus {
 
   .height-lg-90 {
     height: 90px;
+  }
+
+  .square-lg-92 {
+    width: 92px;
+    height: 92px;
+  }
+
+  .width-lg-92 {
+    width: 92px;
+  }
+
+  .height-lg-92 {
+    height: 92px;
   }
 
   .square-lg-200 {
@@ -14591,6 +14643,19 @@ a.text-grey:focus {
     height: 90px;
   }
 
+  .square-xl-92 {
+    width: 92px;
+    height: 92px;
+  }
+
+  .width-xl-92 {
+    width: 92px;
+  }
+
+  .height-xl-92 {
+    height: 92px;
+  }
+
   .square-xl-200 {
     width: 200px;
     height: 200px;
@@ -14669,6 +14734,19 @@ a.text-grey:focus {
 
   .height-xxl-90 {
     height: 90px;
+  }
+
+  .square-xxl-92 {
+    width: 92px;
+    height: 92px;
+  }
+
+  .width-xxl-92 {
+    width: 92px;
+  }
+
+  .height-xxl-92 {
+    height: 92px;
   }
 
   .square-xxl-200 {
