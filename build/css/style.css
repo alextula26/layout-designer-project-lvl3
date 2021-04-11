@@ -14906,6 +14906,7 @@ section {
 }
 
 header {
+  padding-left: 21px;
   background-color: #4545a5;
   border-top-left-radius: 1rem;
 }
