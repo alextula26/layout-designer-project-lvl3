@@ -1,5 +1,4 @@
 header {
-  padding-left: 21px;
   background-color: $primary;
   border-top-left-radius: 1rem;
 
@@ -15,7 +14,6 @@ header {
   .nav-link {
     display: flex;
     align-items: center;
-    color: $white;
     font-size: 0.8rem;
 
     @include media-breakpoint-down(md) {
@@ -26,10 +24,6 @@ header {
       width: 25px;
       height: 25px;
       margin-right: 0.5rem;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-      filter: invert(100%);
 
       @include media-breakpoint-down(md) {
         margin-right: 0;
