@@ -12214,6 +12214,42 @@ a.text-grey:focus {
   }
 }
 
+.fill-primary {
+  fill: #4545a5;
+}
+
+.fill-secondary {
+  fill: #6c757d;
+}
+
+.fill-success {
+  fill: #28a745;
+}
+
+.fill-info {
+  fill: #17a2b8;
+}
+
+.fill-warning {
+  fill: #ffc107;
+}
+
+.fill-danger {
+  fill: #dc3545;
+}
+
+.fill-light {
+  fill: #fbfbfb;
+}
+
+.fill-dark {
+  fill: #343a40;
+}
+
+.fill-grey {
+  fill: #efefef;
+}
+
 .filter-invert-10 {
   filter: invert(10%);
 }
