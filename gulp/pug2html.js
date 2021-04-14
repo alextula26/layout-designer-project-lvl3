@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const pug = require('gulp-pug');
 const plumber = require('gulp-plumber');
 const pugLinter = require('gulp-pug-linter');
+const htmlLinter = require('gulp-htmlhint');
 
 module.exports = function pug2html() {
   return gulp.src('app/pug/pages/*.pug')
@@ -10,5 +11,6 @@ module.exports = function pug2html() {
     .pipe(pug({
       pretty: true
     }))
+    .pipe(htmlLinter('.htmlhintrc'))
     .pipe(gulp.dest('build/'))
 };

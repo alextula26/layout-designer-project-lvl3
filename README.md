@@ -15,6 +15,7 @@ $ sudo apt install make
 $ npm install -g sass
 $ npm install pug-cli -g
 $ npm install --global gulp-cli
+$ npm install -g pug-lint
 ```
 
 ## Setup
