@@ -44,5 +44,5 @@ $ gulp
 ## Link to surge
 
 ```sh
-$ forgetful-zephyr.surge.sh
+$ alextula26-chat.surge.sh
 ```
