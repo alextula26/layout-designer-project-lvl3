@@ -15,7 +15,7 @@
               <svg class="fill-white" width="15" height="25">
                 <use xlink:href="images/sprite/sprite.svg#logo"></use>
               </svg>
-              <nav class="nav" role="tablist" id="top-menu-tab"><a class="nav-link text-light d-block d-lg-none" id="dialog-tab" href="#dialog" data-toggle="tab" role="tab" aria-controls="dialog">
+              <nav class="nav" role="tablist" id="top-menu-tab"><a class="nav-link text-light d-block d-lg-none" id="current-chat-tab" href="#current-chat" data-toggle="tab" role="tab" aria-controls="current-chat">
                               <svg class="nav-link-icon fill-light">
                                 <use xlink:href="images/sprite/sprite.svg#chat-left-text"></use>
                               </svg>Диалог</a><a class="nav-link text-light active" id="contacts-tab" href="#contacts" data-toggle="tab" role="tab" aria-controls="contacts" aria-selected>
@@ -32,14 +32,14 @@
             </header>
             <div class="px-4 pt-5">
               <div class="tab-content">
-                <div class="tab-pane fade" aria-labelledby="dialog-tab" id="dialog">
+                <div class="tab-pane fade" aria-labelledby="current-chat-tab" id="current-chat">
                   <div class="d-block d-lg-none">
                     <div class="d-flex align-items-center px-3 border-bottom position-lg-sticky position-fixed fixed-top bg-white height-92"><img class="rounded-circle mr-4 square-50" src="./images/content/avatar_4.jpg" alt="">
                       <div class="d-flex flex-column py-4">
                         <h6 class="font-weight-bold mb-1">Вениамин Редакторович</h6><small class="text-secondary">Онлайн</small>
                       </div>
                     </div>
-                    <div class="p-5 mt-5 mt-lg-0">
+                    <div class="p-4 p-lg-5 mt-5 mt-lg-0">
                                           <div class="row justify-content-start">
                                             <div class="col-12 col-lg-9 mb-3">
                                               <div class="d-flex"><img class="rounded-circle mr-3 square-50 align-self-end d-none d-lg-block" src="./images/content/avatar_4.jpg" alt="Вениамин Редакторович">
@@ -125,11 +125,11 @@
                                       <input class="form-control-plaintext border-bottom px-4 py-3 bg-white" type="search" placeholder="Поиск по сообщениям">
                                     </form>
                   <div class="chats">
-                    <div class="text-muted mb-3"><a class="chat d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="chat.html"><img class="square-50 rounded-circle" src="./images/content/avatar_4.jpg" alt="Вениамин Редакторович"><span class="flex-grow-1 p-4 overflow-hidden"><span class="d-flex justify-content-between"><span class="chat-name text-dark font-weight-bold font-size-3">Вениамин Редакторович</span><small class="text-secondary">11:45</small></span><small class="chat-description text-truncate text-secondary d-block">o_O</small></span></a>
+                    <div class="text-muted mb-3"><a class="chat d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="#"><img class="square-50 rounded-circle" src="./images/content/avatar_4.jpg" alt="Вениамин Редакторович"><span class="flex-grow-1 p-4 overflow-hidden"><span class="d-flex justify-content-between"><span class="chat-name text-dark font-weight-bold font-size-3">Вениамин Редакторович</span><small class="text-secondary">11:45</small></span><small class="chat-description text-truncate text-secondary d-block">o_O</small></span></a>
                     </div>
-                    <div class="text-muted mb-3"><a class="chat d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="chat.html"><img class="square-50 rounded-circle" src="./images/content/avatar_2.jpg" alt="Джедай Падаванов"><span class="flex-grow-1 p-4 overflow-hidden"><span class="d-flex justify-content-between"><span class="chat-name text-dark font-weight-bold font-size-3">Джедай Падаванов</span><small class="text-secondary">10:12</small></span><small class="chat-description text-truncate text-secondary d-block">Привет, скоро третий проект? Уже скоро надо будет выложить</small></span></a>
+                    <div class="text-muted mb-3"><a class="chat d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="#"><img class="square-50 rounded-circle" src="./images/content/avatar_2.jpg" alt="Джедай Падаванов"><span class="flex-grow-1 p-4 overflow-hidden"><span class="d-flex justify-content-between"><span class="chat-name text-dark font-weight-bold font-size-3">Джедай Падаванов</span><small class="text-secondary">10:12</small></span><small class="chat-description text-truncate text-secondary d-block">Привет, скоро третий проект? Уже скоро надо будет выложить</small></span></a>
                     </div>
-                    <div class="text-muted mb-3"><a class="chat d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="chat.html"><img class="square-50 rounded-circle" src="./images/content/avatar_3.jpg" alt="Алексей Примадонин"><span class="flex-grow-1 p-4 overflow-hidden"><span class="d-flex justify-content-between"><span class="chat-name text-dark font-weight-bold font-size-3">Алексей Примадонин</span><small class="text-secondary">08:53</small></span><small class="chat-description text-truncate text-secondary d-block">Тесты упали &gt;_&lt;</small></span></a>
+                    <div class="text-muted mb-3"><a class="chat d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="#"><img class="square-50 rounded-circle" src="./images/content/avatar_3.jpg" alt="Алексей Примадонин"><span class="flex-grow-1 p-4 overflow-hidden"><span class="d-flex justify-content-between"><span class="chat-name text-dark font-weight-bold font-size-3">Алексей Примадонин</span><small class="text-secondary">08:53</small></span><small class="chat-description text-truncate text-secondary d-block">Тесты упали &gt;_&lt;</small></span></a>
                     </div>
                   </div>
                 </div>
@@ -179,7 +179,7 @@
                 <h6 class="font-weight-bold mb-1">Вениамин Редакторович</h6><small class="text-secondary">Онлайн</small>
               </div>
             </div>
-            <div class="p-5 mt-5 mt-lg-0">
+            <div class="p-4 p-lg-5 mt-5 mt-lg-0">
                           <div class="row justify-content-start">
                             <div class="col-12 col-lg-9 mb-3">
                               <div class="d-flex"><img class="rounded-circle mr-3 square-50 align-self-end d-none d-lg-block" src="./images/content/avatar_4.jpg" alt="Вениамин Редакторович">
